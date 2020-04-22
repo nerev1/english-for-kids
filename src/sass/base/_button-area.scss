@@ -1,0 +1,18 @@
+.button-area  {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    padding: 5px;
+    font-size: 1.6rem;
+    color: $color-clouds;
+    background-color: $color-peter-river;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+
+    &_hidden {
+        visibility: hidden;
+    }
+}

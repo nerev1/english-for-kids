@@ -1,0 +1,80 @@
+.button-switch {
+    width: 160px;
+    height: 50px;
+    position: relative;
+    z-index: 4;
+}
+
+.switch {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-self: start;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        width: 44px;
+        height: 44px;
+        border-radius: 30px;
+        z-index: 3;
+    }
+}
+
+.switch_unchecked {
+    &::before {
+        @extend %transition;
+        background-color: $color-train;
+    }
+    &::after {
+        @extend %transition;
+        background-color: $color-play;
+        left: 3px;
+    }
+}
+
+.switch_checked {
+    &::before {
+        @extend %transition;
+        background-color: $color-play;
+    }
+    &::after {
+        @extend %transition;
+        background-color: $color-train;
+        transform: translateX(113px);
+    }
+}
+
+.label {
+    @extend %transition;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.label-on {
+    top: 5px;
+    left: 20px;
+}
+
+.label-off {
+    top: 5px;
+    right: 20px;
+}
+
+.label_hidden {
+    display: none;
+}

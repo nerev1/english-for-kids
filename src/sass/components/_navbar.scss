@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-nav {
+    @extend %transition;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & .active {
+        @extend %transition;
+        text-decoration: underline;
+    }
+}
+
+.nav-item {
+    flex-basis: 25%;
+    @media (max-width: $breakpoint-tablet) {
+        flex-basis: 50%;
+    }
+    @media (max-width: $breakpoint-mobile) {
+        flex-basis: 100%;
+    }
+}
+
+.nav-item_main {
+    flex-basis: 100%;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    text-align: center;
+}

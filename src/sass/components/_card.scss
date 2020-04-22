@@ -1,0 +1,53 @@
+.card-container {
+    background-color: transparent;
+    width: 300px;
+    height: 280px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.card {
+    @extend %transition;
+    @extend %shadow-small;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    &:hover {
+        @extend %shadow-medium;
+    }
+    &_rotate {
+        transform: rotateY(180deg);
+    }
+
+    &_category {
+        border-radius: 29%;
+        overflow: hidden;
+    }
+}
+
+.card__header {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.card__image {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.card__side {
+    @extend %transition;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+.card__side_back {
+    transform: rotateY(180deg);   
+}
