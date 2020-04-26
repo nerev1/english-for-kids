@@ -14,7 +14,7 @@ module.exports = (env, options) => {
         entry: ['./src/index.js', './src/sass/style.scss'],
         output: {
             path: path.join(__dirname, '/dist'),
-            filename: 'script.js',
+            filename: './dist/script.js',
         },
 
         module: {
