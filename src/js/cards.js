@@ -1,5 +1,5 @@
-const imagePath = '../src/img/';
-const audioPath = '../src/audio/';
+const imagePath = './src/img/';
+const audioPath = './src/audio/';
 const cards = [
   [
     {
