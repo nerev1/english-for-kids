@@ -18357,8 +18357,8 @@ var Category = /*#__PURE__*/function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var imagePath = '../src/img/';
-var audioPath = '../src/audio/';
+var imagePath = './src/img/';
+var audioPath = './src/audio/';
 var cards = [[{
   word: 'cry',
   translation: 'плакать',
@@ -18693,7 +18693,7 @@ var cards = [[{
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var path = '../src/img/';
+var path = './src/img/';
 var categories = [{
   name: 'Action (set A)',
   imageUrl: "".concat(path, "categories/dance.jpg")
