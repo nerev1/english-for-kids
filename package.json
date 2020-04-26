@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/rolling-scopes-school/nerev1-RS2020Q1/issues"
   },
-  "homepage": "https://github.com/rolling-scopes-school/nerev1-RS2020Q1/english-for-kids#readme",
+  "homepage": ".",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
