@@ -1,4 +1,4 @@
-const path = './src/img/';
+const path = '../src/img/';
 const categories = [
   {
     name: 'Action (set A)',
